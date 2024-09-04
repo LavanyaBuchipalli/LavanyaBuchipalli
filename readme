@@ -1,0 +1,118 @@
+# User Stories for Payment Processing Application
+
+## 1. Authentication and User Management
+
+### User Login
+
+**Title:** User Login
+
+**As a** registered user,  
+**I want to** log in to the payment processing application,  
+**So that** I can access my account and perform payment transactions securely.
+
+**Acceptance Criteria:**
+- Login screen with fields for username and password.
+- Successful login directs to the application dashboard.
+- Error message for incorrect credentials.
+- Password reset functionality.
+- Secure handling of login credentials (e.g., encryption).
+
+**Scenario:**
+- **Given** the user is on the login screen,  
+  **When** they enter valid credentials and click "Login",  
+  **Then** they should be directed to the application dashboard.
+
+### User Logout
+
+**Title:** User Logout
+
+**As a** logged-in user,  
+**I want to** log out of the application,  
+**So that** my session is securely closed and no one else can access my account.
+
+**Acceptance Criteria:**
+- Logout button on the dashboard.
+- Session termination and redirection to the login screen.
+
+**Scenario:**
+- **Given** the user is logged in,  
+  **When** they click the logout button,  
+  **Then** their session should be terminated and they should be redirected to the login screen.
+
+### User Account Management
+
+**Title:** Manage User Account
+
+**As a** user,  
+**I want to** view and manage my account settings,  
+**So that** I can update my personal information and manage security settings.
+
+**Acceptance Criteria:**
+- Options to view and update personal details.
+- Ability to change password and manage security settings (e.g., two-factor authentication).
+- Confirmation of saved changes.
+
+**Scenario:**
+- **Given** the user is on the account settings page,  
+  **When** they update their personal information and click "Save",  
+  **Then** the changes should be saved and confirmed.
+
+## 2. Payment Processing
+
+### Select Target Account
+
+**Title:** Select Target Account
+
+**As a** logged-in user,  
+**I want to** select a target account for the payment,  
+**So that** I can specify where the payment should be directed.
+
+**Acceptance Criteria:**
+- List of available accounts.
+- Selection and confirmation of the target account.
+
+**Scenario:**
+- **Given** the user is on the payment page,  
+  **When** they select an account from the list,  
+  **Then** the details of the selected account should be displayed.
+
+### Select Medium of Payment
+
+**Title:** Select Medium of Payment
+
+**As a** user,  
+**I want to** choose the medium of payment,  
+**So that** I can use the appropriate method to complete the transaction.
+
+**Acceptance Criteria:**
+- Options for different payment mediums (e.g., bank transfer, credit card, e-wallet).
+- Selection and validation of the chosen payment medium.
+
+**Scenario:**
+- **Given** the user is on the payment medium selection screen,  
+  **When** they choose a payment method,  
+  **Then** the application should display the relevant fields for entering payment details.
+
+### Enter Payment Details
+
+**Title:** Enter Payment Details
+
+**As a** user,  
+**I want to** enter the details of the payment,  
+**So that** I can specify the amount and other necessary information to complete the transaction.
+
+**Acceptance Criteria:**
+- Fields to enter payment amount and additional details.
+- Validation of entered details.
+- Option to review details before submission.
+
+**Scenario:**
+- **Given** the user has selected a payment medium,  
+  **When** they enter the payment amount and details,  
+  **Then** they should be able to review and confirm the payment information.
+
+### Obtain Payment Confirmation
+
+**Title:** Obtain Payment Confirmation
+
+**As a** user,  
